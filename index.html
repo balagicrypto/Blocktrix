@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Design</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+<script src="https://kit.fontawesome.com/6a4dcd1eee.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <section class="header">
+       <nav>
+            <a href="index.html"><img src = "images/logo.png"></a>
+        <div class = "nav-links" id="navLinks">
+            <i class="fa fa-times" onClick="hideMenu()"></i>
+            <i class="bi bi-x"></i>
+
+            <ul>
+                <li><a href="">Products</a></li>
+                <li><a href="">Services</a></li>
+                <li><a href="">About</a></li>
+                <li><a href="">Enquiry</a></li>
+                
+            </ul>
+        </div>
+            <i class="fa fa-bars" onClick="showMenu()"></i>
+
+        
+       </nav>
+       <div class="text-box">
+        <h1>Your Gateway to the Blockchain Revolution</h1>
+        <p>At Blocktrix, we're at the forefront of blockchain innovation.Our platform is your one-stop destination <br>for the exciting world of blockchain technology.</p>
+        <a href="" class="hero-btn">Explore Our Blockchain Solutions</a>
+
+       </div>
+
+
+    </section>
+
+    <!---- Our products ------>
+
+    <section class="product">
+        <h1>Our Products</h1>
+        <h2>Welcome to Blocktrix, where innovation meets blockchain excellence. Our suite of 
+            products is meticulously crafted to revolutionize the way businesses operate in the digital
+             landscape. Embrace the future of technology with our diverse range of blockchain services 
+             and products, each designed to empower your business and streamline your operations.</h2>
+
+        <div class="row">
+            <div class="course-col">
+                <h3>Blox NFT Marketplace</h3>
+                <p>NFT marketplaces are online platforms facilitating the buying, selling, and trading of non-fungible 
+                    tokens (NFTs), unique digital assets. Artists and creators tokenize their work, allowing collectors 
+                    to securely own and trade exclusive digital content, from art and music to virtual real estate. 
+                    These marketplaces operate on blockchain technology, ensuring transparency and authenticity in NFT
+                     transactions. </p>
+            </div>
+
+    <div class="course-col">
+                <h3>Blox Token</h3>
+                <p>NFT marketplaces are online platforms facilitating the buying, selling, and trading of non-fungible 
+                    tokens (NFTs), unique digital assets. Artists and creators tokenize their work, allowing collectors 
+                    to securely own and trade exclusive digital content, from art and music to virtual real estate. 
+                    These marketplaces operate on blockchain technology, ensuring transparency and authenticity in NFT
+                     transactions. </p>
+            </div>
+            <div class="course-col">
+                <h3>Blox Crypto Exchange</h3>
+                <p>NFT marketplaces are online platforms facilitating the buying, selling, and trading of non-fungible 
+                    tokens (NFTs), unique digital assets. Artists and creators tokenize their work, allowing collectors 
+                    to securely own and trade exclusive digital content, from art and music to virtual real estate. 
+                    These marketplaces operate on blockchain technology, ensuring transparency and authenticity in NFT
+                     transactions. </p>
+            </div>
+        </div>
+
+    </section>
+    <!---Services---->
+    <section class ="services">
+        <h1>Our Services</h1>
+        <h2>At Blocktrix, we offer cutting-edge blockchain services designed to propel your business 
+            into the future. From strategic consulting to seamless integration, our expert team ensures a 
+            smooth and secure journey into the world of decentralized solutions</h2>
+             <div class="row">
+                <div class="service-col">
+                    <img src="images/block1.jpg" alt="">
+                    <h3>Exchange Platform Development</h3>
+                    <p>we offer cutting-edge blockchain services designed to propel your business 
+                        into the future. From strategic consulting to seamless integration, our expert team ensures a 
+                        smooth and secure journey into the world of decentralized solutions</p>
+                </div>
+                <div class="service-col">
+                    <img src="images/block2.jpg" alt="">
+                    <h3>NFT Development</h3>
+                    <p>we offer cutting-edge blockchain services designed to propel your business 
+                        into the future. From strategic consulting to seamless integration, our expert team ensures a 
+                        smooth and secure journey into the world of decentralized solutions</p>
+                </div>
+                <div class="service-col">
+                    <img src="images/block3.jpg" alt="">
+                    <h3>Token Development</h3>
+                    <p>we offer cutting-edge blockchain services designed to propel your business 
+                        into the future. From strategic consulting to seamless integration, our expert team ensures a 
+                        smooth and secure journey into the world of decentralized solutions</p>
+                </div>
+             </div>
+
+    </section>
+
+    <section class="footer">
+        <h4> About Us</h4>
+        <p>Welcome to Blocktrix, where we're shaping the future of innovation through blockchain technology. 
+            Established in 2023, we've been on a mission to <br>revolutionize industries, foster transparency, 
+            and empower individuals through the transformative potential of blockchain.</p>
+            <div class="icons">
+                <i class= "fa fa-facebook"></i>
+                <i class= "fa fa-twitter"></i>
+                <i class= "fa fa-instagram"></i>
+                <i class= "fa fa-linkedin"></i>
+            </div>
+            <p>Made with <i class="fa-regular fa-heart"></i> by M8Groups</p>
+    </section>
+
+
+    <!-----  Javascript for Toggle Menu  -->
+    <script>
+        var navLinks = document.getElementById("navLinks");
+
+        function showMenu(){
+            navLinks.style.right="0";
+        }
+        function hideMenu(){
+            navLinks.style.right = "-200px";
+        }
+    </script>
+
+
+
+
+</body>
+</html>
