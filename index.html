@@ -9,7 +9,20 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
 <script src="https://kit.fontawesome.com/6a4dcd1eee.js" crossorigin="anonymous"></script>
+<style> body {
+    scroll-behavior: smooth;
+}
+
+/* Optional: Adjust the speed of the smooth scrolling */
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 65px; /* Adjust as needed based on your header height */
+}
+
+</style>
+
 </head>
+
 <body>
     <section class="header">
        <nav>
@@ -19,11 +32,11 @@
             <i class="bi bi-x"></i>
 
             <ul>
-                <li><a href="">Products</a></li>
-                <li><a href="">Services</a></li>
-                <li><a href="">About</a></li>
+                <li><a href="product.html">Products</a></li>
+                <li><a href="#service">Services</a></li>
+                <li><a href="About.html">About</a></li>
                 <li><a href="">Enquiry</a></li>
-                
+                <a href="contactUs.html" class="hero-btn">Contact Us</a>
             </ul>
         </div>
             <i class="fa fa-bars" onClick="showMenu()"></i>
@@ -33,7 +46,7 @@
        <div class="text-box">
         <h1>Your Gateway to the Blockchain Revolution</h1>
         <p>At Blocktrix, we're at the forefront of blockchain innovation.Our platform is your one-stop destination <br>for the exciting world of blockchain technology.</p>
-        <a href="" class="hero-btn">Explore Our Blockchain Solutions</a>
+        <a href="product.html" class="hero-btn">Explore Our Blockchain Solutions</a>
 
        </div>
 
@@ -78,36 +91,97 @@
         </div>
 
     </section>
+
+
     <!---Services---->
-    <section class ="services">
+    <section class ="services" id="service">
         <h1>Our Services</h1>
         <h2>At Blocktrix, we offer cutting-edge blockchain services designed to propel your business 
             into the future. From strategic consulting to seamless integration, our expert team ensures a 
             smooth and secure journey into the world of decentralized solutions</h2>
              <div class="row">
+                
                 <div class="service-col">
-                    <img src="images/block1.jpg" alt="">
+                    
+                    <i class="fa-brands fa-hive fa-2x"></i>
                     <h3>Exchange Platform Development</h3>
                     <p>we offer cutting-edge blockchain services designed to propel your business 
                         into the future. From strategic consulting to seamless integration, our expert team ensures a 
                         smooth and secure journey into the world of decentralized solutions</p>
                 </div>
                 <div class="service-col">
-                    <img src="images/block2.jpg" alt="">
+                    <i class="fa-solid fa-bug fa-2x"></i>
                     <h3>NFT Development</h3>
                     <p>we offer cutting-edge blockchain services designed to propel your business 
                         into the future. From strategic consulting to seamless integration, our expert team ensures a 
                         smooth and secure journey into the world of decentralized solutions</p>
                 </div>
                 <div class="service-col">
-                    <img src="images/block3.jpg" alt="">
+                    <i class="fa-solid fa-cubes fa-2x"></i>
                     <h3>Token Development</h3>
                     <p>we offer cutting-edge blockchain services designed to propel your business 
                         into the future. From strategic consulting to seamless integration, our expert team ensures a 
                         smooth and secure journey into the world of decentralized solutions</p>
                 </div>
              </div>
+            
+         </div>
 
+         <div class="row">
+                
+            <div class="service-col">
+                
+                <i class="fa-solid fa-file-code fa-2x"></i>
+                <h3>Smart Contract</h3>
+                <p>we offer cutting-edge blockchain services designed to propel your business 
+                    into the future. From strategic consulting to seamless integration, our expert team ensures a 
+                    smooth and secure journey into the world of decentralized solutions</p>
+            </div>
+            <div class="service-col">
+                <i class="fa-solid fa-diagram-project fa-2x"></i>
+                <h3>Dapp Development</h3>
+                <p>we offer cutting-edge blockchain services designed to propel your business 
+                    into the future. From strategic consulting to seamless integration, our expert team ensures a 
+                    smooth and secure journey into the world of decentralized solutions</p>
+            </div>
+            <div class="service-col">
+                <i class="fa-solid fa-wallet fa-2x"></i>
+                <h3>Crypto Wallet Development</h3>
+                <p>we offer cutting-edge blockchain services designed to propel your business 
+                    into the future. From strategic consulting to seamless integration, our expert team ensures a 
+                    smooth and secure journey into the world of decentralized solutions</p>
+            </div>
+        </div>
+        
+     </div>
+
+    </section>
+    <!-------Work Flow-->
+    <section class="workflow">
+
+        <div class="workflow-row">
+
+            <div class="workflow-left">
+                <img src="images/analyse.jpg">
+            </div>
+
+            <div class="workflow-right">
+        
+                <h1>Analysis & Reserch</h1>
+                <p>Welcome to Blox Token, where memes meet the blockchain! We're not just another crypto token;
+                     we're a community-driven meme token on a mission to redefine the crypto space with humor
+                     and innovation. Blox Token is more than just zeros and ones—it's a digital playground
+                     where crypto enthusiasts come together to share laughs and make a positive impact. <br>
+                     <br>Our journey began with a simple idea: to create a token that not only adds value to your wallet 
+                     but also brings joy to your crypto experience. We're building bridges between the crypto world 
+                     and meme culture, fostering a vibrant community of Blox enthusiasts who appreciate the power of 
+                     laughter.<br>
+                     <br> Join us on this wild ride as we navigate the crypto universe with memes as our compass. 
+                      </p>
+                    
+            </div>
+            
+        </div>
     </section>
 
     <section class="footer">
