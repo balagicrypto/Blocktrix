@@ -65,9 +65,18 @@ nav img{
 
 .text-box p{
     margin: 10px 0 40px;
+    margin-bottom: 20px;
     font-size: 16px;
     color:#fff;
 }
+
+.icons img{
+    width: 3%;
+    margin-bottom: 20px;
+    object-fit: contain;
+    padding: 5px;
+}
+
 
 .hero-btn{
     display: inline-block;
@@ -85,7 +94,7 @@ nav img{
 .hero-btn:hover{
     border: #fff;
     background: #fff;
-    transition: 0.5s;
+    
     color: #010138;
     
 }
@@ -133,6 +142,7 @@ nav .fa{
     margin: auto;
     text-align: center;
     padding-top: 100px;
+    
 }
 
 h1{
@@ -158,9 +168,17 @@ h2{
     background: #010138;  
     border-radius: 10px;
     margin-bottom: 5%;
-    padding: 20px 12px;
+    padding: 3px 3px;
     box-sizing: border-box;
     color: white;
+    
+}
+.course-col:hover{
+    box-shadow: 0 0 20px 0px rgba(0,0,0,0.2);
+}
+.course-col img{
+    width:100%;
+    border-radius: 1.5%;
 }
 h3{
     text-align: center;
@@ -204,10 +222,11 @@ h2{
 }
 
 .service-col:hover{
-   box-shadow: 0 0 20px 0px #010138;
-    transform: scale(1.15);
+   box-shadow: 0 0 10px 0px #b3b3b4;
+    transform: scale(1.10);
     background-color: #010138;
     color: #fff;
+    transition: 0.5s;
     
 }
 .service-col{
@@ -406,20 +425,36 @@ h2{
 /*------Workflow------*/
 
 .workflow{
-    background: #aeaeff;
-}
-.workflow-left img{
-    width:50%;
-    border-radius: 1.5%;
+    background: #010138;
+    padding-top: 50px;
 }
 
 
-.workflow-row{
+.workflow-container{
     width:80%;
     margin: auto;
     padding-top: 80px;
     padding-bottom: 50px;
-    background: #aeaeff;
-    
-    
+    background: #e7e7ff;
+    display: flex;
+    border-radius: 15px;
+}
+.con-left{
+    flex-basis: 48%;
+}
+.con-left img{
+    width:100%;
+    border-radius: 1.5%;
+}
+.con-right{
+    flex-basis: 48%;
+}
+.workflow h1{
+    text-align: center;
+    height: 100px;
+    color: #fff;
+}
+.con-right h1{
+    color: black;
+    text-align: left;
 }
