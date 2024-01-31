@@ -91,13 +91,20 @@ nav img{
     cursor: pointer;
 }
 
-.hero-btn:hover{
+.hero-btn:hover {
     border: #fff;
     background: #fff;
-    
     color: #010138;
+    transition: 0.5s;
     
 }
+
+.hero-btn:hover ::after{
+    width: 100%;
+    transition: 0.5s;
+}
+
+
 
 nav .fa{
     display: none;
@@ -134,20 +141,34 @@ nav .fa{
         padding: 30px;
     }
 }
+    .text-box{
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+.explore-btn{
+    margin-bottom: 40px;
+}
 
-/*------- Products --------*/
+/*-------Our Products --------*/
 
 .product{
+    background-image: url(images/productback.jpg );
+    background-size: cover;
+    
+    
+}
+.product-row{
     width:80%;
     margin: auto;
     text-align: center;
-    padding-top: 100px;
+    padding-top: 60px;
     
 }
 
 h1{
     font-size:36px;
     font-weight: 600;
+    margin-top: 0px;
 }
 
 h2{
@@ -199,7 +220,7 @@ h3{
     width:80%;
     margin: auto;
     text-align: center;
-    padding-top: 100px;
+    padding-top: 60px;
 }
 h2{
     color: #777;
@@ -426,15 +447,16 @@ h2{
 
 .workflow{
     background: #010138;
-    padding-top: 50px;
+    padding-top: 60px;
+    padding-bottom: 100px;
 }
 
 
 .workflow-container{
-    width:80%;
+    width:70%;
+    height: 400px;
     margin: auto;
-    padding-top: 80px;
-    padding-bottom: 50px;
+    padding: 50px;
     background: #e7e7ff;
     display: flex;
     border-radius: 15px;
@@ -453,8 +475,87 @@ h2{
     text-align: center;
     height: 100px;
     color: #fff;
+    padding-top: -10px;
 }
 .con-right h1{
     color: black;
     text-align: left;
+}
+.btn-left{
+    position: absolute;
+    top:0%;
+}
+ /*------Logo Slider------*/
+ .logo-slider{
+    align-items: center;
+    justify-content: center;
+
+}
+ @keyframes scroll{
+    0%{
+        transform: translateX(0);
+    }
+    100%{
+        transform: translateX(calc(-250px * 7));
+    }
+} 
+
+.slider{
+    height:100px;
+    margin:auto;
+    position: relative;
+    width: auto;
+    
+}
+
+
+.slider .slider-track{
+    animation: scroll 35s linear infinite;
+    display: flex;
+    width: calc(250px * 14);
+    
+}
+
+.slider .slide{
+    height: 70px;
+    width: 200px;
+}
+
+.slide{
+    display: flex;
+    border: 1px solid #fff;
+    border-radius:15px;
+    margin: 15px;
+    opacity: 0.7;
+    
+}
+
+.slider-track:hover {
+    animation-play-state: paused;
+    .slide{
+        opacity: 1;
+        box-shadow: #fff;
+    }
+
+}
+.slide-left{
+    width: 60px;
+    padding-top: 20px;
+    padding-left: 20px;
+    
+   
+    
+}
+.slide-right{
+    width:200px;
+    height: 100px;
+    align-items: center;
+    justify-content: center;
+}
+
+.icons{
+    filter: grayscale(100%);
+}
+.icons img:hover{
+    filter: grayscale(0%);
 }
