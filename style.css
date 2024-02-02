@@ -20,7 +20,7 @@ nav{
 }
 
 nav img{
-    width:250px;
+    width:200px;
 }
 .nav-links ul li{
     list-style: none;
@@ -92,20 +92,8 @@ nav img{
 }
 
 .hero-btn:hover {
-    border: #fff;
-    background: #fff;
-    color: #010138;
-    transition: 0.5s;
-    
+    box-shadow: 0 0 10px 0px #b3b3b4;
 }
-
-.hero-btn:hover ::after{
-    width: 100%;
-    transition: 0.5s;
-}
-
-
-
 nav .fa{
     display: none;
 }
@@ -160,7 +148,7 @@ nav .fa{
 .product-row{
     width:80%;
     margin: auto;
-    text-align: center;
+    text-align: left;
     padding-top: 60px;
     
 }
@@ -194,9 +182,7 @@ h2{
     color: white;
     
 }
-.course-col:hover{
-    box-shadow: 0 0 20px 0px rgba(0,0,0,0.2);
-}
+
 .course-col img{
     width:100%;
     border-radius: 1.5%;
@@ -219,7 +205,7 @@ h3{
 .services{
     width:80%;
     margin: auto;
-    text-align: center;
+    text-align: left;
     padding-top: 60px;
 }
 h2{
@@ -232,6 +218,9 @@ h2{
 
 .service-col p{
     padding: 0;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 22px;
     
 }
 
@@ -271,26 +260,34 @@ h2{
 /*------Footer-------*/
 
 .footer{
+        background-image: url(images/footer.jpg);
+        background-size: cover;
+}
+.footer{
     width: 100%;
     text-align: center;
     padding: 30px;
+    color: #fff;
 }
 
 .footer h4{
     margin-bottom: 25px;
     margin-top: 20px;
     font-weight: 600;
+    color: #fff;
+    
 }
+.footer p{
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 22px;
+}    
 
 .icons .fa{
-    color: #010138;
+    color: #ffffff;
     margin:0 13px;
     cursor: pointer;
     padding: 18px 0;
-}
-
-.fa-heart-o{
-    color: #010138;
 }
 
 /* About Us*/
@@ -472,19 +469,18 @@ h2{
     flex-basis: 48%;
 }
 .workflow h1{
-    text-align: center;
+    text-align:left;
     height: 100px;
     color: #fff;
     padding-top: -10px;
-}
-.con-right h1{
     color: black;
-    text-align: left;
 }
 .btn-left{
     position: absolute;
     top:0%;
 }
+
+
  /*------Logo Slider------*/
  .logo-slider{
     align-items: center;

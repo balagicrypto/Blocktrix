@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <title>Swiper demo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+  <!-- Link Swiper's CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="workflow.css">
+
+  <!-- Demo styles -->
+  
+</head>
+
+<body>
+  <!-- Swiper -->
+  <div class="swiper mySwiper">
+   
+    <div class="swiper-wrapper">
+      
+        <div class="swiper-slide">
+        <div class="slide-left">
+          <img src="images/analyse.jpg">
+        </div>
+        <div class="slide-right">
+          <h1>Analysis & Reserch</h1>
+          <p>In the first place, knowing the requirements and planning accordingly is important. <br> <br> With all the 
+            research inputs we gather, the requirement & planning is assessed by our cross-functional team of 
+            experts who come up with the roadmap for the product.</p>
+        </div>
+
+      </div>
+      <div class="swiper-slide">
+        <div class="slide-left">
+          <img src="images/planning.jpg">
+        </div>
+        <div class="slide-right">
+          <h1>Requirements & Planning</h1>
+          <p>Strengthening the roots is mandatory! <br> <br> So, we research the market trend to define and design the strategy, <br>
+            which streamlines the product to move in an expected horizon.</p>
+        </div>
+
+      </div>
+      <div class="swiper-slide">
+        <div class="slide-left">
+          <img src="images/design.jpg">
+        </div>
+        <div class="slide-right">
+          <h1>Design & Project Execution</h1>
+          <p>We impress with our work. <br>Our group of UI/UX team comes up with an eccentric design that our 
+            client needs which also competes our competitor. <br> <br> Later, our developers execute and make it responsive 
+            using the advance framework and techniques.</p>
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="slide-left">
+          <img src="images/delivary.jpg">
+        </div>
+        <div class="slide-right">
+          <h1>Quality Delivery</h1>
+          <p>We never fail to deliver an eminent product. <br> <br>
+             Treating every product as an asset sets the trait of the company. <br> <br>
+              Also, we have a team with eagle eyes to grip the defects and make sure that quality product is delivered.</p>
+        </div>
+      </div>
+    </div>
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-pagination"></div>
+  </div>
+
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      slidesPerView: 1,
+      spaceBetween: 30,
+      loop: true,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
+  </script>
+</body>
+
+</html>
