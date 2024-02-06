@@ -3,10 +3,14 @@
     padding: 0;
     font-family: 'Poppins', sans-serif; 
 }
+body {
+    overflow-x: hidden;
+}
 
 .header{
     min-height: 100vh;
     width: 100%;
+    height: 100%;
     background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(images/banner.jpg);
     background-size: cover;
     background-position: center;
@@ -140,7 +144,7 @@ nav .fa{
 /*-------Our Products --------*/
 
 .product{
-    background-image: url(images/productback.jpg );
+    background-image: url(images/productback.jpg);
     background-size: cover;
     
     
@@ -149,8 +153,13 @@ nav .fa{
     width:80%;
     margin: auto;
     text-align: left;
-    padding-top: 60px;
+    padding-top: 30px;
+    padding-bottom: 30px;
     
+}
+.product-row h1{
+    font-size:60px;
+    color: rgb(179, 246, 255);
 }
 
 h1{
@@ -200,6 +209,7 @@ h3{
         flex-direction: column;
     }
 }
+
     
     /* Services */
 .services{
@@ -441,47 +451,56 @@ h2{
 }
 
 /*------Workflow------*/
-
 .workflow{
-    background: #010138;
-    padding-top: 60px;
+    background-color: #e7e6e6;
     padding-bottom: 100px;
 }
-
-
-.workflow-container{
-    width:70%;
-    height: 400px;
-    margin: auto;
-    padding: 50px;
-    background: #e7e7ff;
-    display: flex;
-    border-radius: 15px;
-}
-.con-left{
-    flex-basis: 48%;
-}
-.con-left img{
-    width:100%;
-    border-radius: 1.5%;
-}
-.con-right{
-    flex-basis: 48%;
-}
 .workflow h1{
-    text-align:left;
-    height: 100px;
-    color: #fff;
-    padding-top: -10px;
-    color: black;
+    padding-bottom: 20px;
+    padding-left: 135px;
+    padding-top: 50px;
+    
 }
-.btn-left{
-    position: absolute;
-    top:0%;
-}
-
+.swiper {
+    width: 1080px;
+    height: 500px;
+    background-color: #fff;
+    border-radius: 30px;
+  }
+  .swiper-container {
+    width: 100%;
+    height: 100%;
+  }
+  
+  .swiper-slide {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .slide-content {
+    display: flex;
+    width: 100%;
+  }
+  
+  .image-container {
+    flex: 1;
+  }
+  
+  .image-container img {
+    width: 100%; /* Make sure the image takes the full width of its container */
+    height: auto;
+  }
+  
+  .text-container {
+    flex: 1;
+    padding: 50px; /* Adjust padding as needed */
+    padding-right: 100px;
+    padding-top: 100px;
+  }
 
  /*------Logo Slider------*/
+
  .logo-slider{
     align-items: center;
     justify-content: center;
@@ -555,3 +574,4 @@ h2{
 .icons img:hover{
     filter: grayscale(0%);
 }
+

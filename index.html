@@ -3,21 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Website Design</title>
+    <title>Blocktrix</title>
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="icon" href="images/favicon.png" type="image/x-icon">
+    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
 <script src="https://kit.fontawesome.com/6a4dcd1eee.js" crossorigin="anonymous"></script>
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+/>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 <style> body {
     scroll-behavior: smooth;
 }
 
-/* Optional: Adjust the speed of the smooth scrolling */
-html {
-    scroll-behavior: smooth;
-    scroll-padding-top: 65px; /* Adjust as needed based on your header height */
-}
 
 </style>
 
@@ -219,6 +221,9 @@ html {
         </div>
     </div>
 
+    
+        
+
     </section>    
 
     <!---Services---->
@@ -287,30 +292,72 @@ html {
     <!-------Work Flow-->
     <section class="workflow">
         <h1>Our Workflow</h1>
-
-        <div class="workflow-container">
-
-            <div class="con-left">
-                <img src="images/analyse.png">
+        <!-- Slider main container -->
+        <div class="swiper">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+              <!-- Slides -->
+              <div class="swiper-slide">
+                <div class="slide-content">
+                    <div class="image-container">
+                      <img src="images/analyse.jpg" alt="Image 1">
+                    </div>
+                    <div class="text-container">
+                        <h3>Analysis & Research</h3>
+                      <p><br><br>In the first place, knowing the requirements and planning accordingly is important. 
+                        With all the research inputs we gather, the requirement & planning is assessed by our 
+                        cross-functional team of experts who come up with the roadmap for the product.</p>
+                    </div>
+                  </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="slide-content">
+                    <div class="image-container">
+                      <img src="images/planning.jpg" alt="Image 1">
+                    </div>
+                    <div class="text-container">
+                        <h3>Requirements & Planning</h3>
+                      <p><br><br>Strengthening the roots is mandatory! So, we research the market trend to define and 
+                        design the strategy, which streamlines the product to move in an expected horizon.</p>
+                    </div>
+                  </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="slide-content">
+                    <div class="image-container">
+                      <img src="images/design.jpg" alt="Image 1">
+                    </div>
+                    <div class="text-container">
+                        <h3>Design & Project Execution</h3>
+                      <p><br><br>We impress with our work. Our group of UI/UX team comes up with an eccentric design 
+                        that our client needs which also competes our competitor. Later, our developers execute and 
+                        make it responsive using the advance framework and techniques.</p>
+                    </div>
+                  </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="slide-content">
+                    <div class="image-container">
+                      <img src="images/delivary.jpg" alt="Image 1">
+                    </div>
+                    <div class="text-container">
+                        <h3>Quality Delivery</h3>
+                      <p><br><br>We never fail to deliver an eminent product. Treating every product as an asset sets the
+                         trait of the company. Also, we have a team with eagle eyes to grip the defects and make sure 
+                         that quality product is delivered.</p>
+                    </div>
+                  </div>
+              </div>
+              ...
             </div>
-
-            <div class="con-right">
-        
-                <h1>Analysis & Reserch</h1>
-                <h2>Welcome to Blox Token, where memes meet the blockchain! We're not just another crypto token;
-                     we're a community-driven meme token on a mission to redefine the crypto space with humor
-                     and innovation. Blox Token is more than just zeros and ones—it's a digital playground
-                     where crypto enthusiasts come together to share laughs and make a positive impact. <br>
-                    
-                     <br> Join us on this wild ride as we navigate the crypto universe with memes as our compass. 
-                </h2>
-                    
-            </div>
-            
-        </div>
-    </section>
-
-
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+          
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+          
+        </section>
     <!----Footer------->
 
     <section class="footer">
@@ -340,7 +387,32 @@ html {
         }
     </script>
 
+    <!-------Sweper JS-->
+    
+    <script>
+    const swiper = new Swiper('.swiper', {
+        // Optional parameters
+        direction: 'horizontal',
+        loop: true,
+      
+        // If we need pagination
+        pagination: {
+          el: '.swiper-pagination',
+        },
+      
+        // Navigation arrows
+        navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+        },
+      
+        // And if we need scrollbar
+        scrollbar: {
+          el: '.swiper-scrollbar',
+        },
+      });
 
+</script>
 
 
 </body>
