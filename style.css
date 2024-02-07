@@ -144,11 +144,10 @@ nav .fa{
 /*-------Our Products --------*/
 
 .product{
-    background-image: url(images/productback.jpg);
-    background-size: cover;
-    
+    background-color: #e7e6e6;
     
 }
+
 .product-row{
     width:80%;
     margin: auto;
@@ -157,10 +156,7 @@ nav .fa{
     padding-bottom: 30px;
     
 }
-.product-row h1{
-    font-size:60px;
-    color: rgb(179, 246, 255);
-}
+
 
 h1{
     font-size:36px;
@@ -183,27 +179,52 @@ h2{
 }
 .course-col{
     flex-basis: 31%;
-    background: #010138;  
+    background: #ffffff;  
     border-radius: 10px;
     margin-bottom: 5%;
     padding: 3px 3px;
     box-sizing: border-box;
-    color: white;
+    color: rgb(0, 0, 0);
+    text-align: left;
     
 }
+.course-col:hover{
+    box-shadow: 0 0 10px 0px #b3b3b4;
+     transform: scale(1.05);
+     background-color: #010138;
+     color: #fff;
+     transition: 0.5s;
+     
+ }
 
 .course-col img{
     width:100%;
-    border-radius: 1.5%;
+    border-radius: 10px;
 }
 h3{
-    text-align: center;
+    text-align: left;
     font-weight:600;
     margin: 10px 0;
+    padding-left: 10px;
+    
 }
 .course-col:hover{
     box-shadow: 0 0 20px 0px rgba(0,0,0,0.2);
+    color: #ffffff;
 }
+a {
+    text-decoration: none;
+    color: black;
+}
+.product p{
+    font-size: 16px;
+    
+    line-height: 22px;
+    padding-left: 10px;
+    padding-bottom: 20px;
+}
+
+
 @media(max-width: 700px){
     .row{
         flex-direction: column;
@@ -460,6 +481,9 @@ h2{
     padding-left: 135px;
     padding-top: 50px;
     
+}
+.workflow h3{
+    font-size: 30px;
 }
 .swiper {
     width: 1080px;
